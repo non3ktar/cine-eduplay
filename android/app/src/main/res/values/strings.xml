@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CineEdu</string>
+    <string name="title_activity_main">CineEdu</string>
+    <string name="package_name">com.cineedu.app</string>
+    <string name="custom_url_scheme">com.cineedu.app</string>
+</resources>

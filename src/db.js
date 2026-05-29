@@ -7,9 +7,7 @@ db.version(1).stores({
 });
 
 export const initDb = async (moviesData) => {
-  const count = await db.movies.count();
-  if (count === 0) {
-    await db.movies.bulkAdd(moviesData);
-    console.log("Database initialized with movies.");
-  }
+  await db.movies.clear();
+  await db.movies.bulkAdd(moviesData);
+  console.log("Database initialized with movies.");
 };
